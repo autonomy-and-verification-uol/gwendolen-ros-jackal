@@ -1,0 +1,9 @@
+mas.file = /src/examples/gwendolen/ros/jackal/race/jackal.gwen
+mas.builder = gwendolen.GwendolenMASBuilder
+
+env = gwendolen.ros.jackal.race.RosEnv
+
+log.info = ail.mas.DefaultEnvironment
+log.fine = ail.semantics.operationalrules
+log.warning = ajpf.MCAPLAgent
+log.format = brief

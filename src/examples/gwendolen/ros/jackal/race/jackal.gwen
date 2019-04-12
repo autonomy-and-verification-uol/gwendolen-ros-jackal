@@ -1,0 +1,22 @@
+GWENDOLEN
+
+:name: jackal
+
+:Initial Beliefs:
+waypoint(a)
+
+waypoint_coordinate(a,-4.1,-1.2,0.0)
+
+:Reasoning Rules:
+
+:Initial Goals:
+
+move(a) [perform]
+
+:Plans:
+
++!move(Waypoint) [perform] : { B waypoint_coordinate(Waypoint,X,Y,Z) } 
+<- move(X,Y,Z);
+
++movebase_result(0,3) : {True} <- print("Movement for goal 0 ended with success.");
++movebase_result(Goal,2) : {True} <- print("Movement for goal ",Goal," ended with failure.");
